@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #491a57;
+}
+h1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #5b277e;
+  font-size: 90px;
+}
+h2 {
+  font-family: Georgia, Times, "Times New Roman", serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #5b277e;
+}
+.glowna {
+  min-width: 800px;
+  max-width: 1200px;
+  width: 80%;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  background-color: #d9d9d9;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top-right-radius: 60px;
+  border-top-left-radius: 60px;
+  margin-top: 100px;
+  box-shadow: 0 20px 30px rgba(48, 10, 78, 0.25),
+    0 0px 10px rgba(48, 10, 78, 0.25);
+}
+
+body {
+  background-color: #d9d9d9;
+  background-image: url(LICZBY.png);
+  background-repeat: repeat-x;
+  padding-bottom: 0%;
+}
+h2 {
+  font-family: Georgia, Times, "Times New Roman", serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.tytul {
+  text-align: center;
+  font-size: 30px;
+}
+#opis1 {
+  text-align: right;
+  padding-bottom: 1%;
+}
+#opis1_1 {
+  text-align: left;
+}
+#opis2 {
+  padding-top: 2%;
+  text-align: right;
+  padding-bottom: 1%;
+}
+
+p {
+  text-align: justify;
+  margin-bottom: 30px;
+}
+.stopka {
+  background-color: #491a57;
+  font-size: 20px;
+  font-family: sans-serif;
+  height: 15%;
+  border-collapse: 20px;
+  box-shadow: 0px 20px 30px rgba(48, 10, 78, 2),
+    0px 0px 10px rgba(48, 10, 78, 2);
+  padding-bottom: 1px;
+}
+#programista {
+  margin-left: 5%;
+  margin-bottom: 2%;
+  height: 300px;
+}
+#firmy {
+  width: auto;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  width: 700px;
+  margin: auto;
+  text-align: center;
+  color: #d9d9d9;
+}
+.loga_firm {
+  width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.zdjecia {
+  width: 100px;
+  height: 100px;
+  margin-right: 32px;
+  margin-left: 32px;
+}
+.zdjecia :last-child {
+  margin-right: 0px;
+}
+.jablko {
+  height: 120px;
+  width: 70px;
+}
+.android {
+  width: 85px;
+}
+#podpis {
+  text-align: right;
+  padding-bottom: 2%;
+  padding-right: 2%;
+  font-size: small;
+  color: #d9d9d9;
+}
+
+.baner {
+  margin: auto;
+  width: 80%;
+}
+.pasek {
+  height: 120px;
+  background-color: #491a57;
+  box-shadow: 0 20px 30px rgba(48, 10, 78, 0.4),
+    0 0px 10px rgba(48, 10, 78, 0.4);
+}
+.text1_1 {
+  background-color: #d9d9d9;
+  padding: 2%;
+  padding-bottom: 0px;
+  border-radius: 4%;
+  width: 900px;
+  margin: auto;
+}
+
+ul {
+  float: left;
+  margin: 30px;
+  margin-top: 10px;
+}
+li {
+  margin-bottom: 5px;
+}
+
+#logo {
+  height: 90%;
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#przyciski {
+  float: right;
+  display: flex;
+  padding: 30px;
+  gap: 20px;
+}
+
+#kurs,
+#ocena {
+  background-image: linear-gradient(to right, #5b266b, #541866);
+  border-radius: 20px;
+  border: 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  color: #b279d8;
+  cursor: pointer;
+  padding: 15px 30px;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+#kurs:active,
+#ocena:active {
+  opacity: 0.7;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}

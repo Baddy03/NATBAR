@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: #2d2f31;
+}
+img {
+  height: 230px;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+h1 {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 12%;
+  font-family: Verdana;
+  color: rgb(255, 115, 0);
+}
+#gwiazdy {
+  margin-top: 5%;
+  margin-bottom: 15%;
+  text-align: center;
+}
+#przycisk {
+  background-image: linear-gradient(to right, #df8208, #e04c11);
+  border-radius: 20px;
+  border: 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  color: #ffe4d8;
+  cursor: pointer;
+  padding: 10px 25px;
+}
+#przycisk:active {
+  opacity: 0.7;
+}
+.pole {
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pole.open {
+  opacity: 1;
+  z-index: 99;
+}
+.pole2 {
+  background-color: #ffe4d8;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  padding: 25px 25px;
+  text-align: center;
+  width: 380px;
+}
+.pole2 h2 {
+  margin: 0;
+}
+.pole2 p {
+  line-height: 24px;
+  margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  padding: 10px;
+  padding-bottom: 30px;
+  font-size: 20px;
+  color: #2d2f31;
+}
+
+h2 {
+  font-size: 30px;
+  color: #2d2f31;
+}

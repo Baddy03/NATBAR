@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oceń nas</title>
+    <link href="ocena.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Oceń nas:</h1>
+    <div id="gwiazdy">
+
+        <img src="gwiazdor_pusty.png" onclick="wybor(1)" onmouseover="wypelnianie(1)" onmouseleave="kasowanie(1)" alt="gwiazda" id="gwiazda1" class="openModal">
+        <img src="gwiazdor_pusty.png" onclick="wybor(2)" onmouseover="wypelnianie(2)" onmouseleave="kasowanie(2)" alt="gwiazda" id="gwiazda2" class="openModal">
+        <img src="gwiazdor_pusty.png" onclick="wybor(3)" onmouseover="wypelnianie(3)" onmouseleave="kasowanie(3)" alt="gwiazda" id="gwiazda3" class="openModal">
+        <img src="gwiazdor_pusty.png" onclick="wybor(4)" onmouseover="wypelnianie(4)" onmouseleave="kasowanie(4)" alt="gwiazda" id="gwiazda4" class="openModal">
+        <img src="gwiazdor_pusty.png" onclick="wybor(5)" onmouseover="wypelnianie(5)" onmouseleave="kasowanie(5)" alt="gwiazda" id="gwiazda5" class="openModal">
+    </div>
+    <input type="hidden" value="" id="wybor">
+
+
+    <div class="pole" id="pole">
+        <div class="pole2">
+            <h2>Dziękujemy!</h2>
+            <p>
+                Twoja ocena została przesłana
+            </p>
+            <a href="../glowna/index.html" id="przycisk">Wróć na stronę główną</a>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<script>
+
+    document.getElementById("wybor").value = 0;
+    let pole = document.getElementById("pole");
+
+    function wybor(x){
+        let wybor = document.getElementById("wybor").value;
+        if(wybor==0){
+            for (let i = 1; i <= x; i++) {
+                let gwiazda = document.getElementById("gwiazda"+i);
+                gwiazda.src = "gwiazdor_pelny.png";
+            }
+            //event.preventDefault(); niepotrzebne?
+            document.getElementById("wybor").value = 1;
+            pole.classList.add("open");
+        }
+    };
+
+
+    function wypelnianie(x){
+        let wybor = document.getElementById("wybor").value;
+        if(wybor==0){
+            for (let i = 1; i <= x; i++) {
+                let gwiazda = document.getElementById("gwiazda"+i);
+                gwiazda.src = "gwiazdor_pelny.png";
+            }
+        }
+    };
+
+    function kasowanie(x){
+        let wybor = document.getElementById("wybor").value;
+        if(wybor==0){
+            for (let i = 1; i <= x; i++) {
+                let gwiazda = document.getElementById("gwiazda"+i);
+                gwiazda.src = "gwiazdor_pusty.png";
+            }
+        }
+    };
+
+</script>

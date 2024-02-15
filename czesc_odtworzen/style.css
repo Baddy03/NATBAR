@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  font-family: sans-serif;
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+
+#ukonczenie_kursu {
+  color: black;
+}
+a:any-link {
+  text-decoration: none;
+}
+#film {
+  text-align: center;
+  height: 100%;
+}
+#reklama {
+  height: 100%;
+  width: 700px;
+}
+
+#logo {
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: inline-block;
+  align-items: center;
+  color: white;
+}
+
+#logo a:link {
+  color: #fff;
+}
+#zostaw_ocene {
+  float: right;
+}
+.main {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.baner {
+  width: 100%;
+  height: 30px;
+  background-color: #2d2f31;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  border-bottom: #3e4143 solid 1px;
+}
+#zostaw_ocene {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-right: 10px;
+  color: white;
+  background-color: #2d2f31;
+  border: 1px white solid;
+}
+#zostaw_ocene:hover {
+  background-color: #494c4e;
+}
+.lewy {
+  width: 75%;
+  /*ZMIANA*/
+  /* max-width: 1100px; */
+  /**/
+
+  float: left;
+  /*  */
+  /* overflow-y: scroll; */
+
+  /* height: 100%; */
+  /* overflow: auto; */
+}
+#lewy_1 {
+  /* float: left; */
+  height: 400px;
+  background-color: #2d2f31;
+}
+.lewy_2 {
+  height: 400px;
+  background-color: white;
+  padding-left: 17px;
+}
+.prawy {
+  float: left;
+  height: 600px;
+  width: 25%;
+
+  /*ZMIANA*/
+
+  /* max-width: 400px; */
+  /**/
+  border-left: 1% solid rgba(216, 216, 216, 0.726);
+  overflow: auto;
+}
+.tresc_kursu {
+  background-color: white;
+  font-weight: 800;
+  font-size: 15px;
+  font-family: sans-serif;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.tresc_kursu {
+  border-bottom: 1px solid rgba(216, 216, 216, 0.726);
+}
+.sekcja p {
+  background-color: #f7f9fa;
+  font-family: sans-serif;
+  font-weight: bold;
+
+  padding-left: 15px;
+  padding-top: 15px;
+  font-size: 16px;
+}
+#ilosc {
+  padding-top: 4px;
+  padding-bottom: 15px;
+  font-weight: normal;
+  font-size: 13px;
+  border-bottom: 1px solid rgba(216, 216, 216, 0.726);
+}
+.film:hover {
+  background-color: #d1d7dc;
+}
+hr {
+  border: 1px solid rgba(216, 216, 216, 0.726);
+  width: 96%;
+  margin: auto;
+}
+.informacje_o_kursie {
+  font-weight: 700;
+  font-size: 25px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-family: "Udemy Sans", "Segoe UI", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.informacje_o_kursie_opis {
+  padding-bottom: 20px;
+  width: 500px;
+}
+.szczegoly {
+  float: left;
+}
+.pola_informacji {
+  float: left;
+}
+.wyklady {
+  float: left;
+}
+
+.szczegolowy_opis {
+  display: flex;
+  gap: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.instruktorzy {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  gap: 60px;
+}
+#dane_prowadzacego {
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+#zdjecie_prowadzącego {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+.prowadzacy {
+  display: flex;
+  align-items: center;
+}
+
+#opis_prowadzącego {
+  text-align: justify;
+  line-height: 25px;
+  padding-top: 20px;
+  clear: both;
+}
+/*MENU*/
+.upuszczenie {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+.upuszczenie_kontent {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 100%;
+  max-height: 200px;
+}
+.upuszczenie_kontent li {
+  font-size: 14px;
+  font-family: "Udemy Sans", "SF Pro Text", "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  padding-left: 15px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-right: 15px;
+}
+.upuszczenie_kontent li:hover {
+  background-color: #d1d7dc;
+}
+li {
+  display: list-item;
+  list-style-position: inside;
+}
+li p {
+  width: 250px;
+}
+.upuszczenie:hover .upuszczenie_kontent {
+  display: block;
+}
+.czas_filmu {
+  padding-top: 5px;
+}
+#komputer {
+  padding-top: 2px;
+  padding-right: 6px;
+  height: 17px;
+  float: left;
+}
+#czas {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+#button,
+button {
+  background-color: #2d2f31;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+  font-family: "Udemy Sans", "SF Pro Text", "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 700;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: #3e4143;
+}
